@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Tag Manager V2 at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+	<meta name="description" content="Audio Tag Manager feature update project at NPR from mid 2021 to early 2022">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, Product Design, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="https://hazelleung.com/index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://hazelleung.com/index">Projects</a></li>
+                    <li><a href="https://hazelleung.com/about">About</a></li>
+                    <li><a href="../images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+	<!-- MAIN BODY -->
+    <div class="content-casestudy">
+            
+        <!-- INTRO --> 
+        <div class="intro">
+            <div class="title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h1>Audio Tag Manager (ATM) V2</h1>
+                </div>
+            </div>
+
+            <div class="intro-background-img">
+                <img src="../images/projects/atmV2/atmv2-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
+                <div class="intro-background">
+                    <p>THE BACKGROUND</p>
+                    <h3>A feature update to ATM to automatically update baked-in sponsorship to dynamic sponsorship.</h3>
+                    <p>When episodes are initially produced, they have ads within the audio file itself. 28 days after publish, when the contract with that sponsor expires, that ad needs to be replaced in order to continue generating revenue.</p>
+                </div>
+            </div>
+                
+            <div class="intro-team-tools">
+                <div class="intro-team">
+                    <p>THE TEAM</p>
+                    <p>I worked with a small team of developers, a QA engineer, and an ad operations manager as a subject matter expert. We did not have a dedicated product manager because our team's PM just left NPR.</p>
+                    <p>So, in addition to being the desginer, I acted as the internal, NPR-facing product manager, gathering requirements, prioritizing requests, coordinating cross-divisional conversations, and organizing feature launch. A lead software developer filled in as the external-facing PM (primarily as the point of contact for ad server AdsWizz).</p>
+                </div>    
+                <div class="intro-tools">
+                    <p>THE METHODOLOGY & TOOLS</p>
+                    <p>For design work, I used Figma to create mockups and prototypes.</p>
+                    <p>For the more product management work, I would write, update, and distribute product briefs, create diagrams for alignment, and participate in stakeholder conversations.</p>
+                </div>
+            </div>    
+        </div>
+
+        <!-- PROBLEM & OPPORTUNITY SECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>The Problem & Opportunity</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>The first time a podcast episode is published, there are segments of sponsorship audio that produced with the rest of the audio file. These sponsorship audio segments are only held for 28 days. After 28 days, they need to be replaced in order to continue monitizing the sponsorship slot within the episode.</p>
+                
+                <p>This replacement process is an extremely manual one. Podcast producers need to keep track of when 28 days has passed and then retag episodes a second time in ATM. This has resulted in delays and mistakes in moving podcast episodes from using baked-in sponsorship to dynamic midroll sponsorship. In turn, this creates an unstable, unreliable sponsorship inventory, which ultimately costs NPR approximately $50,000+ in monthly revenue.</p>
+            </div>  
+        </div>
+        
+        <!-- PROJECT CONTEXT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Key Sponsorship Term Definitions</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                <p>NPR podcasts utilize two types of midroll sponsorship (i.e. messages that appear in the middle of podcast episodes):</p>
+                
+                <div class="module-blocks">
+                    <div class="callout standard" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">Baked-in Midroll</h3> 
+                        <ul>
+                            <li>Audio that is produced with the podcast episode and is in the audio file in perpetuity</li>
+                            <li>Is required to remain in the episode for 28 days after publication</li>
+                            <li>Needs to be converted into dynamic midroll after 28 days after publication</li>
+                        </ul>
+                    </div> 
+                    <div class="callout standard" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Dynamic Midroll</h3> 
+                        <ul>
+                            <li>Audio that is placed in a podcast episode at the time of download</li>
+                            <li>Is configured and flighted to an episode via an ad server (i.e. AdsWizz)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p>There are two types of dynamic midrolls:</p>
+                <ol>
+                    <li>Inserted at a specified start time cue ("Insert")</li>
+                    <li>Replaces audio between specified start and an end time cues (“Replacement")</li>
+                </ol>
+                <p>The latter "Replacement" method is the technology that enables replacing baked-in sponsorship messages with dynamic midrolls. Producers specify where their baked-in message (which is produced into the audio file) starts and ends, and based on that information, AdsWizz (our ad server vendor) removes the baked-in message and puts dynamic midroll sponsorship in its place.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ATM RESEARCH -->
+    <div class="casestudy-research">
+        <div class="content-casestudy casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>ATM Workflow User Research</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="module-blocks">
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">It was easy to forget to switch sponsorship over.</h3> 
+                        <p class="spacing">Producers have competing priorities, and it was difficult to keep track of when 28 days had passed or remember to come back to update the episode.</p>
+                        <p class="quote-text">"We always forget to do these updates because we have so many other things going on, like trying to create new episodes. Updating old episodes is not as important."</p>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">The switchover process very manual and redundant.</h3> 
+                        <p class="spacing">Producers need to reference disparate spreadsheets and emails in order to complete the switch, which can cause copy/paste and cross-referencing nightmares.</p>
+                        <p class="quote-text">"Why can't this be done the first time we tag the episode? ... before we publish the episode?</p>
+                    </div>  
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Things around and supporting ATM could benefit from more clarity.</h3> 
+                        <p class="spacing">When they need troubleshooting help (which is not often but are emergencies when they happen), producers are often left hanging.</p>
+                        <p class="quote-text">"Most of the time, there is no issue. But when there is an issue, it's usually a big deal and I don't know where or who to go to to solve the issue in a timely manner."</p>
+                    </div>
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">Producers knew what to do but not why they were doing it.</h3> 
+                        <p class="spacing">For every episode, producers get instructions on which break types to select within ATM, but there is little explanation or documentation on why.</p>
+                        <p class="quote-text">"Yeah so I just go to the [sponsorship] email I get every week and then do the [tagging]... all I know is that I need to do this and how to do it. It would be nice to know why too."</p>
+                    </div> 
+
+                </div>  
+            </div>
+        </div>
+    </div>
+            
+    <div class="content-casestudy">
+        
+        <!-- HIGH-FIDELITY WIREFRAMES -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>High-fidelity Wireframes</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                <p>I created these wireframes in Figma and created several different iterations for this feature. This feature, while seemingly insignificant and simple, actually leads to changes in all stages of ATM. Most notably, when producers are tagging their baked-in sponsorship, how would that experience play out? I created several initial versions of how individual portions of this workflow could look.</p>
+            
+                <br>
+                <h3 class="green">Date Input/Conversation Date Calculation Interaction</h3>
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/atmV2/datePicker-Load.png" class="img">
+                        <p class="caption">A producer inputs a publication date at the beginning when loading a specific episode file so that ATM can calculate 28 days. This conversion date is always displayed after.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/atmV2/datePicker-Tag.png" class="img">
+                        <p class="caption">A producer inputs a publication date while tagging an episode file (after they load an episode into ATM). The conversion date is only displayed during the preview phase. </p>
+                    </div>
+                </div>
+                
+                <br>
+                <h3 class="green">Sponsorship Marking Interaction</h3>
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/atmV2/tag-DoubleTag.png" class="img">
+                        <p class="caption">Baked-in sponsorship messages are tagged as “Baked-in,” and producers select an ad product that will replace the baked-in one 28 days later.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/atmV2/tag-Initial.png" class="img">
+                        <p class="caption">Instead of tagging baked-in sponsorship messages as “Baked-in,” producers immediately tag a baked-in slot as the ad product that will replace it 28 days later.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- XML REQUIREMENTS CHANGE -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>XML Requirements Change</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                <p>I reviewed these high-fidelity wireframes, with my scrum development team (who could provide development feedback) and with an NPM subject matter expert (who could provide sponsorship business feedback). During these reviews, we realized that the original set of ad product had technical specifications (which were set by AdsWizz) that resulted in a roundabout tagging experience.</p>
+                <p>Producers were utilizing the “Replacement” method but by specifying start and end times that were half a second of silence apart. As a result, I proposed a more straightforward tagging experience: producers only need to input a start and end time if they are trying to cover a baked-in sponsorship message. For everything else, producers will use the “Insert” method and only input a start time. This streamlined and freed up the tagging experience to allow for an automatic conversion. </p>
+            </div>
+            
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/atmV2/xml-updates.png" class="img-full">
+            </div>
+        </div>
+
+        <!-- WIREFRAME REVIEW -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Wireframe Updates</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>With the design review and updates to the XML techncial specifications, I went back into Figma and consolidated feedback into one design. I also generated a clickable prototype for a more dynamic experience.</p>
+            
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/atmV2/final-load.png" class="img">
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/atmV2/final-doubledate.png" class="img">
+                    </div>
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/atmV2/final-tag.png" class="img">
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/atmV2/final-preview.png" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SUPPORT DOCUMENTATION & TRAININGS -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Updating Help Documentation & Feature Rollout Onboarding Efforts</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Given that my research found that the support and troubleshooting experiences could be more built out, we took this feature update opportunity to update some experiences surrounding ATM.</p>
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/atmV2/digitalsupport-ticket.png" class="img">
+                    </div>
+                    <div class="text">
+                        <h3>Help Documentation </h3>
+                        <p>We updated support documentation to reflect the changes in design and sponsorship ad products, and added support articles to cover more topics. These documents are the first line of troubleshooting support that producers reference when they encounter an issue with ATM.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/atmV2/trainingslide.png" class="img">
+                    </div>
+                    <div class="text">
+                        <h3>Trainings</h3>
+                        <p>Podcast production teams are constantly changing as new producers and/or interns join, leave, and swap teams. As such, a key UX consideration for ATM is new feature training. I collaborated with the team to create producer training for this new feature. We required at least one producer from each podcast to attend the training to learn how to use this automatic baked-in conversion feature.</p>
+                    </div>
+                </div>
+                
+                <h3>Post-launch Office Hours</h3>
+                <p>Additionally, we held three office hour sessions after we launched this feature. Here, producers could come get help with an issue they had while using ATM, tag an episode with us to make sure they were doing it correctly, or ask any questions they might have.</p>
+            </div>
+        </div>
+        
+        <!-- RESULTS & IMPACT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Results & Impact</h2>
+                </div>
+            </div>
+            
+            <div class="module-blocks standard">
+                <div class="callout-full" data-aos="fade-right" data-aos-once="true">
+                    <h2 class="green">This feature update solved a lot of pain points! &#127881</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Since the launch of this feature, we have seen three main benefits:</p>
+            
+                <ol>
+                    <li>NPR/NPM have been able to maximize sponsorship sales, bringing in an additional ~$50,000 a month in revenue to NPR.</li>
+                    <li>Podcast producers have fewer steps/tasks to do and keep track of, reducing insertion errors due to manual steps and freeing up time for creating new episodes.</li>
+                    <li>Podcast Operations team know exactly where all baked-in sponsorship messages are so they can remove them and create sponsorship-free versions of episodes for NPR Plus distribution (NPR’s paid subscription service).</li>
+                </ol>
+            </div>
+        </div>
+            
+        <!-- REFLECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Refelction</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>This was the first project where I took on not just the design work but also an additional product management feature prioritization and stakeholder management role, specifically on sponsorship requirements with NPM and on feature launch with NPM and Programming podcast production teams. </p>
+                <p>It was a great learning experience; I learned how to better communicate with people who are not also in the tech space, and I learned how to tightly scope problems and design solutions into shippable units of work. Smaller, achievable improvements that people are able to benefit from are much better design solutions than trying to design bigger, perfect improvements that never see the light of day. At the same time, losing a team member in the middle of the project really highlighted the importance of every single person on the team and the importance of having developer, design, and product perspectives all present in a scrum implementation team.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    <hr>
+        
+    <!-- OTHER WORK -->
+    <div class="content-margin">
+        <div class="title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Check out my other work!</h2>
+            </div>
+        </div>
+        
+        <div class="project-card-row">
+            <a href="atm-v1" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/atmV2Cover.png" alt="Cover photo for ATM V2 project" alt="Cover photo for ATM V2 project">
+                <div class="project-teaser">
+                    <h3>ATM V1</h3>
+                    <p>PRODUCT DESIGN & USER RESEARCH</p>
+                    <p>Building a standalone tool for NPR podcast producers to tag their episodes for sponsorship messages.</p>
+                </div>
+            </a>
+            
+            <a href="fis" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/fisCover.png" alt="Cover photo for Feed Ingest Service Discovery project">
+                <div class="project-teaser">
+                    <h3>Feed Ingest Service Product Discovery</h3>
+                    <p>RESERACH & SERVICE DESIGN</p>
+                    <p>Driving a discovery initiative to define how NPR manages third-party and local station podcasts for NPR platforms.</p>
+                </div>
+            </a>
+            
+            <a href="panda" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/pandaCover.png" alt="Cover photo for Podcasters NPR Dashboard project">
+                <div class="project-teaser">
+                    <h3>Podcasters NPR Dashboard</h3>
+                    <p>PRODUCT DESIGN</p>
+                    <p>Creating the internal, admin version of NPR's third-party and local station podcast management tool.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+	<!-- SOCIALS FOOTER -->
+    <div class="socials">
+        <!-- Email Me -->
+        <a href="mailto:hhleung@ucsd.edu" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+        </a>        
+        <!-- View photos -->
+        <a href="https://vsco.co/hazelleung" target="_blank">               
+            <i class="fas fa-camera-retro fa-lg"></i>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/hazelleung" target="_blank">
+            <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>

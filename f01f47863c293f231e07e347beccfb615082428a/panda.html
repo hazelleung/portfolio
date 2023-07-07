@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Podcasters NPR Dashboard at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+	<meta name="description" content="Internal version of Podcasters NPR Dashboard project for station and third-party podcasts in NPR from November 2020 to March 2021">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, Product Design, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="https://hazelleung.com/index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://hazelleung.com/index">Projects</a></li>
+                    <li><a href="https://hazelleung.com/about">About</a></li>
+                    <li><a href="../images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+    
+    <!-- MAIN BODY -->
+    <div class="content-casestudy">
+            
+        <!-- INTRO --> 
+        <div class="intro">
+            <div class="title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h1>Podcasters NPR Dashboard</h1>
+                </div>
+            </div>
+            
+            <div class="intro-background-img">
+                <img src="../images/projects/panda/panda-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
+                <div class="intro-background">
+                    <p>THE BACKGROUND</p>
+                    <h3>Creating the internal, admin version of NPR's third-party and local station podcast management tool.</h3>
+                    <p>When a NPR employee who works with non-NPR podcasts, they want a space where they can both get both the high-level view of the full portfolio and be able to drill down into a specific episode on a show.</p>
+                </div>
+            </div>
+                
+            <div class="intro-team-tools">
+                <div class="intro-team">
+                    <p>THE TEAM</p>
+                    <p>I worked with a scrum team comprised of a product manager, a project manager, software developers, a QA engineer, and an engineering manager.</p>
+                </div>    
+                <div class="intro-tools">
+                    <p>THE METHODOLOGY & TOOLS</p>
+                    <p>I was the only designer on this project, handling all things from designing/facilitating workshops to wireframing/prototyping in Figma.</p>
+                </div>
+            </div>    
+        </div>
+        
+        <!-- PROBLEM & OPPORTUNITY SECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>The Problem & Opportunity</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>In addition to podcasts that NPR produces, NPR also distributes podcasts from member stations and other third-party podcasters in NPR-owned-and-operated clients (like the NPR One mobile application and the website). This is done via podcast RSS feed ingestion.</p>
+            
+                <p>After the completion of Station and Third-party Podcast Management Discovery project, we had a tool to build: Podcasters NPR Dashboard (PaNDa). This tool would be both internally and externally facing.</p>
+                
+                <ul>
+                    <li><span>NPR Staff:</span> admin view of all station and third-party podcasts in a centralized location where they can view, manage, and troubleshoot these podcasts</li>
+                    <li><span>Local Station Staff & Third-party Podcasters:</span> view and manage their podcasts that are in the NPR database</li>
+                </ul>
+
+                <p>This portfolio piece is specifically only on the internal version of this tool that NPR staff will utilize.</p>
+            </div>
+        </div>  
+        
+        <!-- CONTEXT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+  			   <h2 class="highlight-darkgreen">Project Definitions</h2>
+            </div>
+            
+            <div class="section-content">
+                <div class="module-blocks">
+                    <div class="callout standard" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">Station podcasts</h3> 
+                        <p>These podcasts come from local stations throughout the United States. They are stations that are part of the NPR network (e.g. WAMU in Washington, DC; KQED in the Bay Area; WUTC in Chattanooga, TN; KUOW in Seattle, WA; etc.).</p>
+                        <p>There are also podcasts that come from public-media adjacent organizations like America Public Media (APM) and Public Radio Exchange (PRX). For the purpose of this portfolio piece, I am also referring to this type of podcasts as “Station podcasts.”</p>
+                    </div> 
+                    <div class="callout standard" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Third-party podcasts</h3> 
+                        <p>These podcasts are from independent podcasters either from individuals, groups, or companies. (e.g. 1619 from the New York Times; Today, Explained from Vox Media; Freakonomics Radio from Freakonomics Radio and Stitcher, etc.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CO-CREATION -->
+    <div class="casestudy-research">
+        <div class="content-margin casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Co-creation Sessions</h2>
+                </div>
+            </div>
+                
+            <div class="section-content">
+                <p>Instead of designing for the eventual users of PaNDa, I wanted to design with them. To do this, I invited them to participate in the design process through co-creation sessions, where they had direct input into how this tool would be designed. That way, they directly provided input into a tool that would eventually be in their hands.</p>
+            </div>
+            
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/cocreation1.png" class="img">
+                    <p class="caption">Session 1</p>
+                </div>
+                <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/panda/cocreation2.png" class="img">
+                    <p class="caption">Session 2</p>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>These sessions were facilitated over remote video calls, and utilized Google Slides as the central collaboration tool. Sessions first had an individual ideation section, where they would brainstorm ideas for what this tool would look like and/or account for. Then we came back together for a group discussion before working together to create a single low-fidelity UI wireframe that took everyone’s main ideas into consideration. We did this twice: once for a dashboard page and once for a podcast page.</p>
+            </div>
+        </div>
+    </div>
+            
+    <!-- WIREFRAMES -->
+    <div class="content-casestudy">
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Wireframes</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>I took the UI wireframes from the co-creation sessions and began iterating to create fuller low-fidelity wireframes and then high-fidelity wireframes. I brought each round of fidelity of wireframes to my project scrum team, the design team, and our internal end users for review. </p>
+            </div>
+            
+            <br>
+            <h3 class="green">Dashboard Low-fidelity</h3>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-lowfidelity1.png" class="img-third">
+                    <p class="caption">Row variation</p>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-lowfidelity2.png" class="img-third">
+                    <p class="caption">Tile variation, uncontained search/filter</p>
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-lowfidelity3.png" class="img-third">
+                    <p class="caption">Tile variation, static search/filter</p>
+                </div>
+            </div>
+            
+            <br>
+            <h3 class="green">Dashboard High-fidelity</h3>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-highfidelity1.png" class="img-third">
+                    <p class="caption-third">Row variation.</p>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-highfidelity2.png" class="img-third">
+                    <p class="caption-third">Tile variation with border, label, and color indicating status.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/panda/dashboard-highfidelity3.png" class="img-third">
+                    <p class="caption-third">Pop-up module with status color dots in the top right corner.</p>
+                </div>
+            </div>
+            
+            <br>
+            <h3 class="green">Podcast Page Low-fidelity</h3>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-lowfidelity1.png" class="img-third">
+                    <p class="caption-third">Episode tab that displays all the episodes of a podcast.</p>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-lowfidelity2.png" class="img-third">
+                    <p class="caption-third">Metadata tab that shows information ingested from a RSS feed.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-lowfidelity3.png" class="img-third">
+                    <p class="caption-third">Pop-up module experience for editing select podcast information.</p>
+                </div>
+            </div>
+            
+            <br>
+            <h3 class="green">Podcast Page High-fidelity</h3>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-highfidelity1.png" class="img-third">
+                    <p class="caption-third">Episode tab.</p>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-highfidelity2.png" class="img-third">
+                    <p class="caption-third">History of the podcast ingest attempts and results for troubleshooting with an error notification.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/panda/podcastpage-highfidelity3.png" class="img-third">
+                    <p class="caption-third">Pop-up module for updating information and confirmations of key actions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PIVOT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Pivot Due to Company Priority Changes</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>In the start of 2021, a bigger, newer project was brought forward from the NPR Board and C-suite executives: NPR+, a premium podcast offering where listeners can listen to ad-free NPR podcasts. In order to work on this, many on my team (including myself as the sole designer on all podcast tech at NPR) were asked to pivot as quickly as possible. </p>
+                <p>As a result, we were tasked wrap up work on PaNDa as quickly as possible. We 1) cut the scope of this initiative down to just the internal version of this tool to accomplish this (i.e. we were not going to create an externally facing side of this tool, as outlined in the local station and third-party management discovery project) and 2) we cut functionality of the internal version down to just be an improved troubleshooting tool that provided more detailed descriptions of warnings and errors.</p>
+            </div>
+        </div>
+   
+        <!-- ERROR/WARNING CATEGORIZATIONS -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Warning & Error Categorizations and Definitions</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>For improved troubleshooting, the project’s lead software developer and I went through the different kinds of RSS feed issues that could arise. We categorized them into two buckets: warnings and errors. Warnings are issues that do not prevent a podcast from being ingested and utilized on NPR platforms. Errors are issues that do prevent a podcast from being ingested and must be fixed before it can be utilized on NPR platforms. </p>
+                <p>After categorization, I grouped similar issues together. Similarity was based on the action(s) that would be required to resolve the issue. With these groupings, I wrote a summary of the issue for display in the UI. I then brought these groupings and messages to the OnlineTech digital support team to review and provide their thoughts on how these groupings or messages could be improved.</p>
+            
+                <div class="module-blocks">
+                    <img src="../images/projects/panda/warning-error-groupings.png" class="img-full" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+        </div>
+            
+        <!-- DESIGN ITERATION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Design Iteration</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/panda/dashboard-row.png" class="img">
+                    </div>
+                    <div class="text">
+                        <h3 class="green">Dashboard Design</h3>
+                        <p>For the dashboard, I proceeded with the row design because it provided an easier experience scanning the status of podcasts down the left-hand side.</p>
+                        <p>One of the most common use cases for internal NPR staff is to ascertain the status of a podcast and to troubleshoot a reported issue. The left-hand status column best supports the experience of quick scanning in one direction.</p>
+                        <p>However, we also removed the “add podcast” functionality to cut implementation scope as it required complex organization associations that new back-end services were not built to handle yet. </p>
+                    </div>
+                    <div class="text">
+                        <h3 class="green">Error Handling and Experiences</h3>
+                        <p>I also expanded error handling experiences to capture more use cases.</p>
+                        <p>For example, RSS feed URLs must be unique and not match any other podcast in the NPR catalogue. The feed ingestion service will validate data entries and the Podcasters NPR Dashboard will display the corresponding error message, if needed.</p>
+                        <p>Other use cases included when the URL was not a valid one, did not use https, or when PaNDa runs into difficulties performing an action from a button click.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/panda/edgecase-URLuniqueness.png" class="img">
+                    </div>
+                </div>
+                
+                <br>
+                <h3 class="green">Podcast Status Error/Warning Redesign</h3>
+                <p>The podcast page designs had a status bar at the top of the page that showed whether a podcast state was good, warning, error, inactive, or invisible. In this iteration, I removed the status bar because 1) good is the default state, 2) it was redundant to have the state and warning/error bars, and 3) inactive and invisible statues should be more obvious.</p>
+                
+                <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/panda/status-episodes.png" class="img-third">
+                    <p class="caption-third">Good is the default state, no need to explicitly say everything is okay.</p>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/status-warning.png" class="img-third">
+                    <p class="caption-third">Warning and error bars are persistent across views, making obvious that something needs to be addressed.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/panda/status-invisible.png" class="img-third">
+                    <p class="caption-third">Inactive and Invisible states are made more prominent with a sticky header bar that stays at the top of the viewport as someone scrolls down.</p>
+                </div>
+            </div>
+        </div>
+            
+        <!-- PROTOTYPE -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Prototype</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Eventually, my Figma file had approximately 90 different mockups and variations that were all connected to display the possible interactions and how they would look. The interactive prototype was comprehensive and were linked to developer tickets for precise design references.</p>
+                
+                <div class="module-blocks">
+                    <div data-aos="fade-in" data-aos-once="true">
+                        <img src="../images/projects/panda/prototype-connections.png" class="img-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!--DESIGN SYSTEM & STYLE GUIDE -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Design System & Style Guide</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/panda/components-dashboard.png" class="img">
+                        <p class="caption">Components used for the main dashboard</p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/panda/components-podcast.png" class="img">
+                        <p class="caption">Components used for individual podcast pages</p>
+                    </div>
+                    <div data-aos="fade-in" data-aos-once="true">
+                        <img src="../images/projects/panda/styleguide.png" class="img-full">
+                        <p class="caption-full">General style guide for develeopers to easily reference and get a sense of when styles are utilized.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!-- RESULTS & IMPACT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Results & Impact</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>The OnlineTech team has reported that it has greatly streamlined their troubleshooting process and allows them to more quickly resolve issues that are reported to them. The improved troubleshooting component of PaNDa provided a lot more visibility into what exactly was wrong with the podcast, where the issue was occurring, and instructions on how to fix the problem.</p>
+            </div>
+        </div>
+            
+        <!-- REFLECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Reflection</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Like in most places, the COVID-19 pandemic was something that really threw a wrench into our plans. But, things happen, and I very quickly learned how to adapt and pivot to finding smaller, quicker wins. The larger station and third-party management tool we envisioned in the discovery project would have not only could have been a huge UX improvement for internal NPR staff, local station staff, and third-party podcasters, but could have been a huge business opportunity for NPR as well.</p>
+                <p>NPR and local radio stations are ultimately all a part of the public media radio network where we interdepend on one another. Making the lives of those at local stations, which are oftentimes very small and severely understaffed, easier makes the lives of NPR staff easier as well. However, the perfect should not get in the way of good. This version of PaNDa that we implemented is successful, even if it is a smaller improvement.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <hr>
+    <!-- OTHER WORK -->
+    <div class="content-margin">
+        <div class="title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Check out my other work!</h2>
+            </div>
+        </div>
+        
+        <div class="project-card-row">
+            <a href="pmss" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/pmssCover.png" alt="Cover photo for ATM V2 project">
+                <div class="project-teaser">
+                    <h3>Planet Money Summer School Landing Page</h3>
+                    <p>VISUAL DESIGN & WEB DEVELOPMENT</p>
+                    <p>Designing and developing a bespoke landing page for a Planet Money Podcast special series.</p>
+                </div>
+            </a>
+            
+            <a href="atm-V1" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/atmV1Cover.png" alt="Cover photo for Feed Ingest Service Discovery project">
+                <div class="project-teaser">
+                    <h3>ATM V1</h3>
+                    <p>PRODUCT DESIGN & USER RESEARCH</p>
+                    <p>Building a standalone tool for NPR podast producers to tag their episodes for sponsorship messages.</p>
+                </div>
+            </a>
+            
+            <a href="atm-V2" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/atmV2Cover.png" alt="Cover photo for Podcasters NPR Dashboard project">
+                <div class="project-teaser">
+                    <h3>ATM V2</h3>
+                    <p>PRODUCT DESIGN & MANAGEMENT</p>
+                    <p>Updating ATM to automatically update baked-in sponsorship to dynamic sponsorship.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+	<!-- SOCIALS FOOTER -->
+    <div class="socials">
+        <!-- Email Me -->
+        <a href="mailto:hhleung@ucsd.edu" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+        </a>        
+        <!-- View photos -->
+        <a href="https://vsco.co/hazelleung" target="_blank">               
+            <i class="fas fa-camera-retro fa-lg"></i>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/hazelleung" target="_blank">
+            <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>
