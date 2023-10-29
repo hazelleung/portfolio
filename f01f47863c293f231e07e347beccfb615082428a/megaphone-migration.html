@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Megaphone Ad Server Migration at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+	<meta name="description" content="Audio Tag Manager feature update project at NPR from mid 2021 to early 2022">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, Product Design, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="https://hazelleung.com/index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://hazelleung.com/index">Projects</a></li>
+                    <li><a href="https://hazelleung.com/about">About</a></li>
+                    <li><a href="../images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+	<!-- MAIN BODY -->
+    <div class="content-casestudy">
+            
+        <!-- INTRO --> 
+        <div class="intro">
+            <div class="title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h1>Megaphone Ad Server Migration</h1>
+                </div>
+            </div>
+
+            <div class="intro-background-img">
+                <img src="../images/projects/megaphoneMigration/megaphone-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
+                <div class="intro-background">
+                    <p>THE BACKGROUND</p>
+                    <h3>NPR’s contract with the ad server AdsWizz was coming to an end. After evaluations of vendor bids, NPR decided to migrate ad servers from AdsWizz to Megaphone.</h3>
+                    <p>On the back of a company-wide 10% reduction in force due to budget deficits from economic downturns, this ad server migration strategically became a business imperative.</p>
+                </div>
+            </div>
+                
+            <div class="intro-team-tools">
+                <div class="intro-team">
+                    <p>THE TEAM</p>
+                    <p>Throughout this entire project, my team constantly changed. At the beginning of the project, NPR went through an organization-wide reduction in force that was instigated due to significant budget deficits. My team lost one member in this layoff period. On top of the reduction in force, my team went through reorganizations, three team member departures, and one team member went on parental leave for six months.</p>
+                    <p>Generally though, I was the sole designer, working with a shifting team of two-three software engineers, zero to two product managers, and one engineering manager.</p>
+                </div>    
+                <div class="intro-tools">
+                    <p>THE METHODOLOGY & TOOLS</p>
+                    <p>For design work, I used Figma to create service blueprints and sharable, team documentation.</p>
+                    <p>I also designed and facilitated nine cross-discipline workshops and feedback gathering sessions with various stakeholders, end user groups, and department executives.</p>
+                </div>
+            </div>    
+        </div>
+
+        <!-- PROBLEM & OPPORTUNITY SECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>The Problem & Opportunity</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Podcast ads comprises almost one-third of total annual company revenue, this project became the company’s number one priority. This migration alone was valued at $20+ million in revenue and savings across three years. Of this amount, $10 million was guaranteed if we hit a certain number of impressions, $5 million was a one-time bonus on completion and delivery, and another $5 million in savings due to using a different, cheaper vendor.</p>
+                
+                <p>In order to complete a migration, <span>NPR needed to ensure publishing future episodes have the necessary metadata for Megaphone to insert ads.</span></p>
+                
+                <p>This case study revolves around the third goal. In order accomplish the goal, NPR needed to break down and rebuild the various manual processes that were in place for inserting ad metadata, and NPR needed to pinpoint exactly where new integrations needed to be built. The migration needed to be completed by September 2023 in order to meet our contractual deal with Megaphone.</p>
+                
+                <p>As the designer, I helped design the new, ideal workflows and integrations for ad insertion with a new third-party vendor and pinpointed opportunities to improve ad metadata insertion for our internal users. </p>
+            </div>  
+        </div>
+        
+        <!-- PROJECT CONTEXT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Context</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                
+                <div class="module-blocks">
+                    <div class="callout standard" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">Ads/Sponsorship</h3> 
+                            <p>We needed to give Megaphone two pieces of metadata in order for them to insert an ad: when to put the ad in and what to put in. At NPR, different teams know these two different pieces of information.</p>
+                        <ul>
+                            <li><span>Podcast producers</span> know the when to put the ads.</li>
+                            <li><span>NPM (National Public Media</span>, NPM’s corporate sponsorship arm) knows the what to put in the ad. </li>
+                        </ul>
+                        <img src="../images/projects/megaphoneMigration/ad-metadata-definition.png" class="img-full">
+                    </div> 
+                    <div class="callout standard" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Project</h3> 
+                            <p>This project also coincided with the most tumultuous time I’ve ever had at NPR. There was a reduction in force that directly impacted my own team. Four team members left the company across a three month period. One person went on parental leave. For such an important project, it was crucial for the team to have stability; we never had stability and ended up planning, designing, and developing this project in constant chaos.</p>
+                            <p>As one of the few members who was present from the beginning to end, I was a key person who provided the through line of decisions and background knowledge. As such, I ended up being not just the designer for this migration, but took on some product management and project management roles as well to ensure this strategically-key project was a success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-casestudy">
+        
+        <!-- CURRENT STATE -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Current State</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                <div class="module-blocks">
+                    <div class="callout standard" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">User Groups</h3> 
+                            <p>At NPR, ad insertion spans across three teams across three teams and departments.</p>
+                        <ul>
+                            <li><span>NPM:</span> They sell ad slots in podcast episodes (i.e. inventory), which makes up the ad setting metadata Megaphone needs to insert an ad.</li>
+                            <li><span>Podcast Producers:</span> They create the podcast episodes and determine the timecode where the ad should be placed.</li>
+                            <li><span>Podcast Operations:</span> They handle the post-production treatments of podcast episodes (i.e. ad insertion) and the publishing of episodes.</li>
+                        </ul>
+                    </div> 
+                    <div class="callout standard" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Relevant Systems</h3> 
+                        <p>Technologically, ad insertion spans across four systems, two of which are owned by a different development team and one by our vendor, Megaphone.</p>
+                        <ul>      
+                            <li><span>Seamus:</span> NPR's bespoke content management system that is used to publish episodes.</li>
+                            <li><span>IO/Wendu</span>: Asset Management Orchestrator/System that managed episode audio files.</li>
+                            <li><span>Megaphone:</span> Third-party vendor ad server.</li>
+                            <li><span>Content Distribution Service:</span> A repository of published content that is ready to be distributed on various downstream platforms.</li>
+                        </ul>  
+                    </div>
+                </div>
+                
+                <p>This complex ecosystem made the migration very thorny. All the different teams worked on differing timelines, which meant accurately timing handoffs between teams and aligning systems for data flow challenging.</p>
+            
+                <p>There are many touchpoints across the podcast production, ad insertion, and publishing workflow where something could go wrong, which could mean we lose tens of thousands of dollars an episode. As such, I decided to create service blueprints to map out the various touchpoints between people, systems, and the integrations needed between them.</p>
+            </div>
+            
+            <br>
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/megaphoneMigration/current-state.png" class="img-full">
+            </div>
+            
+            <ol>
+                <li><span>Producer in Seamus CMS:</span>  Encodes audio in the CMS, which creates an mp3 audio file that is required for AdsWizz to insert ads</li>
+                <li><span>Producer in ATM:</span> Inserts ad metadata (timecues + type of ad) by adding ID3 tags to the mp3 audio file itself</li>
+                <li><span>Producer in Seamus CMS:</span> Episode mp3 file is added to an episode story page in the CMS and published.</li>
+                <li><span>AdsWizz:</span> Reads ad metadata to insert the expected ads at the expected time(s).</li>
+            </ol>
+            
+            <p>Below is a more detailed blueprint I created.</p>
+            
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/megaphoneMigration/current-state-blueprint.png" class="img-full">
+            </div>
+            
+            <div class="module-blocks">
+                    <div class="callout standard" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">Painpoint #1</h3> 
+                            <p>it is possible for podcast episodes to be published before ad metadata is added to it. Consequentially, episodes that are published before are not monetized, resulting in a loss of on average $5,000 per episode. </p>
+                    </div> 
+                    <div class="callout standard" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">Painpoint #2</h3> 
+                        <p>As the last group to touch the audio file, podcast producers are tasked with adding the ad metadata; however, this is an operational task that the Podcast Operations team should handle. This makes troubleshooting issues, which is a Podcast Operations responsibility, very difficult and time consuming to resolve.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SERVICE BLUEPRINTS V2 & IDEATION WORKSHOPS -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Service Blueprints V1 & Ideation Workshohps</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>We began this project with zero idea of how to accomplish the workflow migration and design the system architecture to ensure Megaphone received the necessary metadata for ad insertion. Because it was such an ambiguous space without specific requirements yet, I designed some blueprinting workshops to begin to work through how the new world might look end-to-end.</p>
+                <p>Across several workshops, we ideated over several potential solutions, drafted how these solutions could potentially look like from both a user and system perspective. At the same time, we also would generate open questions, assumptions that we needed to verify or disprove, and established known facts. I compiled all these into a shared Figma file and helped answer or figure out who could answer questions.</p>
+                <p>After four workshops, we realized was that we needed more information about how Megaphone technologically worked in order to set up our systems for integration with Megaphone’s. The developers on my team went off to do a bit more tech discovery work.</p>
+                    
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/megaphoneMigration/mvpa-cds-lookup.png" class="img-full">
+                </div>
+                <br>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/megaphoneMigration/mvpb-io-atm-seamus.png" class="img-full">
+                </div>
+                <br>
+                <div data-aos="fade-center" data-aos-once="true">
+                    <img src="../images/projects/megaphoneMigration/questions-assumptions-facts.png" class="img-full">
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE BLUEPRINTS V2 & CONSENSUS BUILDING -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Service Blueprints V2 & Consensus Building</h2>
+                </div>
+            </div>
+        
+            <div class="section-content">
+                <p>Armed with more information about how Megaphone worked, the scrum team met up again to discuss and further narrow down potential solutions. We narrowed it down two potential options, both with differing pros and cons.</p>
+                <p>I then brought these workflows were then presented to various stakeholders and end users to receive feedback. I did this in to begin opening up conversations about how the migration would look to teams and departments outside of my own, and to ensure that their perspectives were accounted for before selecting a solution to implement.</p>
+            </div>
+            
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/megaphoneMigration/mvpc-io-atm-seamus.png" class="img-full">
+            </div>
+            <br>
+            <div data-aos="fade-left" data-aos-once="true">
+                <img src="../images/projects/megaphoneMigration/mvpd-megaphone.png" class="img-full">
+            </div>
+           
+            <div class="section-contet">
+                <p>Presenting two blueprints side by side provided people opportunities to compare the two proposed solutions and see the differences and implications of the solution more clearly.</p>
+            </div>
+        </div>
+
+        <!-- SERVICE BLUEPRINT V3 -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Service Blueprint V3</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>At a high level, this is what our solution ended up looking like. We decided to leverage AirTable’s ability to perform automations in order to get rid of the manual step NPM was doing to send over ad setting metadata to producers; conversely, this also got rid of producers’ need to understand ad setting information when submitting their timecodes. </p>
+            
+                 <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/megaphoneMigration/mvp-final.png" class="img-full">
+                </div>
+                
+                <p>This new process eliminated both of the big painpoints that the original workflow had. Episodes could no longer be published without monetization and PodOps is able to take over all post-production steps, giving them agency and visibility into episodes if an issue ever arises.</p>
+                <p>This blueprint was used as a reference guide for the engineering team to create tech designs. Because everyone was using this blueprint and it delineated major decisions already, it sped up tech design to development to testing timelines.</p>
+                
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/megaphoneMigration/mvp-blueprint.png" class="img-full">
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- SUPPORT DOCUMENTATION & TRAININGS -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Auxiliary UX Design Work</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <h3>Reimagining Escalation Procedures</h3>      <div class="module-blocks">
+                    <div data-aos="fade-right" data-aos-once="true">
+                        <img src="../images/projects/megaphoneMigration/escalation-process.png" class="img">
+                    </div>
+                <div class="text">
+                        <p>Invariably, issues with the new workflow will arise. To preemptively address issues, using the service blueprint as a guide, I (with a product manager from NPM and an engineering manager)  brainstormed the various error cases, edge cases, and less frequent but important use cases that may occur. We then sorted them based on priority; the ones that we think would be most common or are less frequent but important to ensure the business could run. For the high priority issues, we crafted instructions on how to handle them. For the lower priority issues, we relied on a common escalation procedure.</p>
+                </div>
+                        <p>Previous research had revealed that the two biggest pain points for podcast producers when submitting issues for help was 1) the lack of transparency, resulting in anxiety that an issue has not been seen and will not get resolved and 2) an unclear pathway(s) of where to go to when they have an issue.</p>
+                        <p>With this migration, we had a mini opportunity improve the escalation process. We consolidated the pathways to get help into one public Slack channel. If at any point, a producer had an issue with publishing their episode, they should go to that public Slack channel to reach out for help. That way, 1) many people would have visibility into the issue, 2) other producers could chime in if they knew the answer, and 3) we could tag in specific people if we needed to escalate an issue. </p>
+                </div>
+                
+                <h3>Creating Training Presentations</h3> 
+                <div class="module-blocks">
+                <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/megaphoneMigration/training-slide.png" class="img">
+                    </div>
+                    <div class="text">
+                        <p>We held 20 one hour long training sessions in total; 17 for producers to cover all the shows and 3 for the Podcast Operations team. Past research and product launches showed that these podcast production teams are under immense time crunches to create and publish their episodes, making it difficult to pay attention, truly digest, and adapt to future workflow changes before it is absolutely required.</p>
+                    </div>
+                        <p>Because of this, I developed catered slide decks with specific step-by-step instructions of the changes a specific team would need to make based on their show’s characteristics. Additionally, I highlighted key tips and tricks to provide as much context and information as possible. These slide decks were not just materials to use in the sessions, but were also meant to be used as a reference guide as they stepped through the new workflow for the first time. These training sessions became the foundation for a successful migration; if they were not successful, the migration would not be successful, and they were successful.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- RESULTS & IMPACT -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Results & Impact</h2>
+                </div>
+            </div>
+            
+            <div class="module-blocks standard">
+                <div class="callout-full" data-aos="fade-right" data-aos-once="true">
+                    <h2 class="green">My team and I successfully completed the migration with minimal revenue loss, establishing a more secure financial future for NPR! &#127881</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>One month since completion, NPR has published nearly 500 episodes using this new workflow, all of which have been marked for sponsorship pre-publish. Additionally, troubleshooting was now more efficient and trust-building due to the public nature of the issues escalation Slack channel. </p>
+            
+                <p>Migrating ad servers is akin to jumping from one moving train to another because we had to move live components from one ad server with their own requirements to a different one with their own requirements. On top of that, we had to move our entire podcast portfolio, which included 12,000+ publicly available episodes. This project touched so many different departments and teams, making communicating and organizing everyone to be on the same page extremely difficult. We had to not only communicate with stakeholders, but also the podcast production teams and Podcast Operations teams to ensure they were trained on the changes and procedures for the new workflow. </p>
+                
+                <p>The guaranteed revenue that comes with this change was absolutely essential for the company because it strategically puts NPR on a much stronger financial footing in the present and for the future. Had we not been successful, NPR would likely have had to do another reduction in force this year. My team and I received accolades from department VPs, SVPs, and the CEO.</p>
+            </div>
+        </div>
+            
+        <!-- APPENDIX -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Appendix</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>As a result of a constantly shifting team, I ended up picking up some product management and project management roles in order to fill in team gaps and ensure the success of this financially important project. Some of the other things I did for this project included:</p>
+                <ul>
+                    <li>Gathered product requirements and wrote user stories to capture all the use cases across user groups.</li>
+                    <li>Tracked open questions and answered them/found out who was the best person to answer them.</li>
+                    <li>Communicated directly with stakeholders via review sessions, presentations, meetings, and written comms/direct messages.</li>
+                    <li>Compile podcast publishing schedule in order to calculate each individual show’s migration time. This included when an episode is published and when an episode audio file is completed.</li>
+                    <li>Create migration timeline according to a each individual show's audio completion/episode publish time, tech constraints, and project timeline.</li>
+                    <li>Write technical support documentation and FAQ documents for both the Podcast Producers and Podcast Operations team. </li>
+                </ul>
+            </div>
+        </div>
+</div>
+        
+    <hr>
+        
+    <!-- OTHER WORK -->
+    <div class="content-margin">
+        <div class="title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Check out my other work!</h2>
+            </div>
+        </div>
+        
+        <div class="project-card-row">
+            <a href="atm-v1" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/atmV2Cover.png" alt="Cover photo for ATM V2 project" alt="Cover photo for ATM V2 project">
+                <div class="project-teaser">
+                    <h3>ATM V1</h3>
+                    <p>PRODUCT DESIGN & USER RESEARCH</p>
+                    <p>Building a standalone tool for NPR podcast producers to tag their episodes for sponsorship messages.</p>
+                </div>
+            </a>
+            
+            <a href="fis" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/fisCover.png" alt="Cover photo for Feed Ingest Service Discovery project">
+                <div class="project-teaser">
+                    <h3>Feed Ingest Service Product Discovery</h3>
+                    <p>RESERACH & SERVICE DESIGN</p>
+                    <p>Driving a discovery initiative to define how NPR manages third-party and local station podcasts for NPR platforms.</p>
+                </div>
+            </a>
+            
+            <a href="panda" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/pandaCover.png" alt="Cover photo for Podcasters NPR Dashboard project">
+                <div class="project-teaser">
+                    <h3>Podcasters NPR Dashboard</h3>
+                    <p>PRODUCT DESIGN</p>
+                    <p>Creating the internal, admin version of NPR's third-party and local station podcast management tool.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+	<!-- SOCIALS FOOTER -->
+    <div class="socials">
+        <!-- Email Me -->
+        <a href="mailto:hhleung@ucsd.edu" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+        </a>        
+        <!-- View photos -->
+        <a href="https://vsco.co/hazelleung" target="_blank">               
+            <i class="fas fa-camera-retro fa-lg"></i>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/hazelleung" target="_blank">
+            <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>

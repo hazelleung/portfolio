@@ -373,6 +373,10 @@ span{
     padding: 0;
 }
 
+.text p{
+    margin-top: 0;
+}
+
 .text, .caption{
     max-width: 490px;
     width: 100%;
