@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concierge V1 at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+	<meta name="description" content="Audio Tag Manager project at NPR from mid 2019 to early 2020">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, Product Design, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="https://hazelleung.com/index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://hazelleung.com/index">Projects</a></li>
+                    <li><a href="https://hazelleung.com/about">About</a></li>
+                    <li><a href="../images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+	<!-- MAIN BODY -->
+    <div class="content-casestudy">
+            
+        <!-- INTRO --> 
+        <div class="intro">
+            <div class="title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h1>Concierge V1</h1>
+                </div>
+            </div>
+
+            <div class="intro-background-img">
+                <img src="../images/projects/concierge/concierge-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
+                <div class="intro-background">
+                    <p>THE BACKGROUND</p>
+                    <h3>0-1 design of a front-end product for CDS, the API that delivers content to news organizations across the US. </h3>
+                    <p>As the first-ever UI for CDS, Concierge is the front-page of all published content from NPR and local, member stations, opening opportunities for more collaborative journalism through increased visibility into the API as well as understanding how to use the API.</p>
+                </div>
+            </div>
+                
+            <div class="intro-team-tools">
+                <div class="intro-team">
+                    <p>THE TEAM</p>
+                    <p>Multidisciplinary group of people comprised of a product manager, software engineers, and an engineering manager.</p>
+                </div>    
+                <div class="intro-tools">
+                    <p>THE METHODOLOGY & TOOLS</p>
+                    <p>Figma mockups and prototypes</p>
+                </div>
+            </div>    
+        </div>
+                
+        <!-- PROBLEM & OPPORTUNITY SECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>The Problem & Opportunity</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">                        
+                <p>The NPR Network is a collaborative journalism effort between NPR and the 250 member local Stations across the United States. The goal of the NPR Network is to create a unique national and local blend of journalism by enabling collaboration between a more national organization (NPR) and a more local organization (Stations). This national/local blend of journalism delivers quality and extremely relevant news to local communities. </p>
+                <p> CDS is NPR’s proprietary content delivery API for the NPR Network, meant to enable a seamless exchange of journalism across participating organizations. </p>
+                <p>To start small, we scoped this project to an internal NPR release, with a future goal to release this tool to the broader NPR Network (i.e. local stations). </p>
+            </div>
+        </div>   
+    </div>
+    
+    <!-- DISCOVERY RESEARCH -->
+    <div class="casestudy-research">
+        <div class="content-margin casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                     <h2>Discovery Research</h2>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <p>CDS is a relatively new API, with NPR clients being the heaviest users and Stations slowly onboarding onto, publishing to, and reading from it. Consequently, not much was known about how CDS users behave, what their goals are, and how they wish to use CDS to achieve their goals. These workshops were many people’s first time giving customer feedback to us.</p>
+                <p>You can read more about our discovery and how I planned, facilitated, and synthesized findings here. In summary:</p>
+            
+                <div class="module-blocks">
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">1. CDS has a steep learning curve</h3> 
+                        <ul>
+                            <li>Make CDS easier to use, understand, and adopt by anyone in the NPR Network</li>
+                            <li>Provide visibility, controls, and insights into CDS for collaboration and troubleshooting</li>
+                        </ul>
+                        <div class="module-blocks">
+                            <img src="../images/projects/cdsDiscovery/cdsFindings1.png" class="img">
+                        </div>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">2. Content in CDS is not used effectively</h3> 
+                        <ul>
+                            <li class="spacing">Make it easier to build different types of audience experiences with items in CDS</li>
+                            <li class="spacing">Align strategies and goals towards collaborative journalism</li>
+                        </ul>
+                        <div class="module-blocks">
+                            <img src="../images/projects/cdsDiscovery/cdsFindings2.png" class="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+                        
+    <!-- IDEATION SECTION -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Ideation</h2>
+            </div>
+        </div>
+            
+        <div class="section-content">
+
+            <p style="margin-bottom: 40px">Since I was designing a 0-1 product, everything was greenspace. Using the design system I had previously set up, below are a few main features I focused on.</p>
+
+            <h3 class="green">Querying CDS — understanding what is in CDS and making it easier to find items</h3>
+            <p>The biggest paint point people felt was not understanding what was in CDS. To address this, I created a modular homepage that displays the most popular collections in CDS and the most recently published content to CDS. This helps with discoverability.</p>
+            <p>Additionally, a search and filter bar at the top helps users build a query, which is a huge change from requiring someone to know how to build their own query using accepted parameters.</p>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/concierge/dashWireframe.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/concierge/dashExample.png" class="img">
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/concierge/miniCardOptions.png" class="img-full">
+                </div>
+            </div>
+            <p>I played with different ways to display metadata of different types of content. Each content type can have different variations of metadata, making a design with a modular approach the most efficient.</p>
+            
+            <hr>
+
+            <h3 class="green">Search Results Cards - Speed up troubleshooting publishing issues</h3>
+            <p>These cards are what are displayed after someone performs a search. Intended to be a quick snapshot of the CDS document, it surfaces the key information about a piece of content and the most important information needed for someone to quickly troubleshoot. A more detailed view can be accessed by clicking into a card. I worked through various iterations, playing with the what kind of metadata is shown and how the metadata is shown.</p>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/concierge/cardOptions1.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/concierge/cardOptions2.png" class="img">
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="green">CDS Documents & Document Assets - Understand what metadata is in CDS</h3>
+            <p>There are ~30 different type of asset types in CDS, and each type has a different variation of metadata (e.g. text, audio, images, videos, links, etc). This presents a difficult design challenge to find a design that accommodates for all possible permutations. With the assumption that I will cover most, and most common, use cases, I came up with these initial designs based on the most frequently used asset types for all content published between a time period of one month.</p>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/concierge/asset1.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/concierge/asset2.png" class="img">
+                </div>
+            </div>
+
+            <p>However, after some review with the engineering team, it became clear that these initial designs I created for CDS assets was not enough for an engineer to take action on them. Ultimately, I needed to design a more modular display in order to encompass all the different kinds of assets there were and the variations how assets can show up in a single document/piece of content. I ideated new variations to find a  better solution that:</p>
+            <ul>
+                <li>Strike a balance between necessary information and detailed information via previews with expandable/collapsible capabilities</li>
+                <li>Showcase the hierarchy of metadata within a single asset via better groupings and top-level labeling of IDs</li>
+                <li>More clearly distinguishing between variations of a single asset (i.e. one asset ID) and multiple assets with different variations (i.e. multiple asset IDs)</li>
+            </ul>
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/concierge/docAssets1.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/concierge/docAssets2.png" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- FINAL DESIGNS -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Final Designs & Release of MVP</h2>
+            </div>
+        </div>
+        
+        <div class="section-content">
+            <p>With these designs, I reviewed them with the scrum team as well as key stakeholders/end-users of Concierge. Specifcally, I spoke with the editorial teams and the member partnership (local station liasons) teams. With their feedback, I created these final versions and handed them off to the engineers for development.</p>
+        </div>
+            
+        <div class="module-blocks">
+            <div data-aos="fade-in" data-aos-once="true">
+                <img src="../images/projects/concierge/conciergeQueryExpand.gif" class="img-full">
+            </div>
+
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/concierge/queryFinal.png" class="img">
+            </div>
+            <div data-aos="fade-left" data-aos-once="true">
+                <img src="../images/projects/concierge/docFinal.png" class="img">
+            </div>
+
+            <div data-aos="fade-in" data-aos-once="true">
+                <img src="../images/projects/concierge/conciergeHowToHover.gif" class="img-full">
+            </div>
+        </div>
+    </div>
+            
+    <!-- RESULTS & IMPACTS -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Results & Impact</h2>
+            </div>
+        </div>
+            
+        <div class="section-content">
+            <p>Concierge launched with much fanfare. It solved a lot of pain points that people at NPR had, particularly having to do with finding content within CDS (newsroom division) and troubleshooting issues that local stations raise (on-call software engineers and member partnership division).</p>
+            <ul>
+                <li>Visibility into reporting on major news events (e.g. elections, major weather events, the Olympics, etc.) was faster and less manual, allowing reporters to focus on the news instead of manipulating tools to find what they needed.</li>
+                <li>Streamlined troubleshooting of content display issues (e.g. incorrect images, wrong audio, different title being pulled, etc.) in half by removing the need for an engineer to query CDS.</li>
+            </ul>
+            
+            <p>Here are some of the kudos we’ve received since Concierge launched.</p>
+
+            <div class="module-blocks">
+            <div data-aos="fade-left" data-aos-once="true">
+                <img src="../images/projects/concierge/feedback1.png" class="img-full">
+            </div>
+            <div data-aos="fade-right" data-aos-once="true">
+                <img src="../images/projects/concierge/feedback2.png" class="img-full">
+            </div>
+            <div data-aos="fade-left" data-aos-once="true">
+                <img src="../images/projects/concierge/feedback3.png" class="img-full">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- OTHER WORK -->
+    <div class="content-margin">
+        <div class="title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Check out my other work!</h2>
+            </div>
+        </div>
+        
+        <div class="project-card-row">
+            <a href="junction" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/junctionCover.png" alt="Cover photo for ATM V2 project">
+                <div class="project-teaser">
+                    <h3>Network Junction</h3>
+                    <p>USER RESEARCH & PRODUCT DESIGN</p>
+                    <p>Revamping podcast management and launching additional content type management features.</p>
+                </div>
+            </a>
+            
+            <a href="cds-discovery" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/cdsDiscoveryCover.png" alt="Cover photo for Feed Ingest Service Discovery project">
+                <div class="project-teaser">
+                    <h3>CDS Discovery</h3>
+                    <p>USER RESEARCH & WORKSHOP FACILITATION</p>
+                    <p>Driving a discovery initiative to define how NPR enables collaborative journalism across NPR and local stations.</p>
+                </div>
+            </a>
+            
+            <a href="megaphone-migration.html" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/megaphoneCover.png" alt="Cover photo for Podcasters NPR Dashboard project">
+                <div class="project-teaser">
+                    <h3>Megaphone Migration</h3>
+                    <p>SERVICE DESIGN</p>
+                    <p>Untangling and reimagining workflows for sponsorship insertion with a new ad server.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+	<!-- SOCIALS FOOTER -->
+    <div class="socials">
+        <!-- Email Me -->
+        <a href="mailto:hhleung@ucsd.edu" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+        </a>        
+        <!-- View photos -->
+        <a href="https://vsco.co/hazelleung/" target="_blank">               
+            <i class="fas fa-camera-retro fa-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>

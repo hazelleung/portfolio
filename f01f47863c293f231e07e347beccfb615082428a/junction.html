@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Network Junction at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+	<meta name="description" content="Audio Tag Manager project at NPR from mid 2019 to early 2020">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, Product Design, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="../css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="https://hazelleung.com/index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://hazelleung.com/index">Projects</a></li>
+                    <li><a href="https://hazelleung.com/about">About</a></li>
+                    <li><a href="../images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+	<!-- MAIN BODY -->
+    <div class="content-casestudy">
+            
+        <!-- INTRO --> 
+        <div class="intro">
+            <div class="title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h1>Network Junction</h1>
+                </div>
+            </div>
+
+            <div class="intro-background-img">
+                <img src="../images/projects/junction/junction-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
+                <div class="intro-background">
+                    <p>THE BACKGROUND</p>
+                    <h3>Redesigning and expanding functionality of a content management tool to be self-service and lay the foundation for collaborative journalism between NPR and local Stations in the NPR Network.</h3>
+                    <p>Network Junction is where both NPR staff and local Stations manage and troubleshoot local station podcasts, newscasts, and story segments sent to NPR platforms for NPR Network-wide distribution. </p>
+                </div>
+            </div>
+                
+            <div class="intro-team-tools">
+                <div class="intro-team">
+                    <p>THE TEAM</p>
+                    <p>A team with a product manager, software engineers, and editorial/local station liaison subject matter experts.</p>
+                </div>    
+                <div class="intro-tools">
+                    <p>THE METHODOLOGY & TOOLS</p>
+                    <p>User research interviews, usability testing, Figma wireframes and prototypes.</p>
+                </div>
+            </div>    
+        </div>
+                
+        <!-- PROBLEM & OPPORTUNITY SECTION -->
+        <div class="casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>The Problem & Opportunity</h2>
+                </div>
+            </div>
+            
+            <div class="section-content">
+                <p>Network Junction’s previous iteration (Podcasters NPR Dashboard) was limited to just podcasts and only available to NPR staff, limiting Stations’ ability to understand how their podcasts are performing and limiting their ability to troubleshoot any issues.</p>
+            
+                <p>For many local stations, NPR platforms (particularly the NPR App) is where they receive a bulk of their podcast and newscast listening metrics. Yet, the process of submitting their content to NPR was a black box and error-prone.</p>
+            
+                <p>We saw this as an opportunity to create a new and improved version that both NPR and at Stations could use as a self-service dashboard. Network Junction is largely the front end experience for the Feed Ingest Service (or FIS) that ingests Station content into the Content Distribution Service (or CDS).</p>
+            </div>
+        </div>   
+    </div>
+    
+    <!-- POC USABILITY TESTING -->
+    <div class="casestudy-research">
+        <div class="content-margin casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                     <h2>Station Podcast & Newscast Research</h2>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <p>I first conducted user research to better understand what Station staff need from a podcast and newscast management tool. The original tool (Podcasters NPR Dashboard) was an internal NPR tool that was designed for only NPR staff users in mind. </p>
+                <p>I interviewed 13 people from 10 local stations across the continental US. The people we spoke with were those who manage their podcasts and/or newscasts in some capacity (some local stations had one person doing both, others had dedicated staff for each).</p>
+
+                <div class="module-blocks">
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">1. NPR platforms are useful to local stations in reaching a national audience</h3> 
+                        <p class="quote-text">“It is really meaningful for NPR to give those spotlights to Stations. It wasn’t possible 6-7 years ago. And it helps us [Stations] in ways that NPR probably doesn’t know.”</p>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">2. Analytics is an important post-publishing management tool</h3> 
+                        <p class="quote-text">“Accessing a robust dataset that can zoom in and out allows us to better see user behavior would be so helpful.”</p>
+                    </div>
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">3. Various podcast hosting and publish tools are used across local stations, in part to fill in the gaps of NPR-provided tools/services</h3> 
+                        <p class="quote-text">“Something that is really important: a simple interface that gives me an opportunity to upload, see everything, and download metrics.”</p>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">4. StationConnect (the legacy tool available to local stations) is a “set it and forget it” tool, but stations want more opportunities to curate how their content appears on NPR platforms.</h3> 
+                        <p class="quote-text">“We just tend to just set it and forget it. We might swap out featured shows here and there.”</p>
+                    </div>  
+                </div>  
+
+                <p>Drilling down into specific podcast and newscast management and troubleshooting findings:</p>
+                <div class="module-blocks">
+                <div class="callout" data-aos="fade-right" data-aos-once="true">
+                    <h3 class="green">Podcast</h3> 
+                    <div class="module-blocks">
+                        <img src="../images/projects/junction/reserachPodcast.png" class="img">
+                    </div>
+                </div> 
+                <div class="callout" data-aos="fade-left" data-aos-once="true">
+                    <h3 class="green">Newscasts</h3> 
+                    <div class="module-blocks">
+                        <img src="../images/projects/junction/researchNewscast.png" class="img">
+                    </div>
+                </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+            
+                        
+    <!-- WIREFRAMES & PROTOTYPE SECTION -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Wireframes & Prototype</h2>
+            </div>
+        </div>
+
+        <div class="section-content">
+
+            <p>I started with the new designs for sections related to newscast since it would be a brand new addition to Network Junction.</p>
+            
+            <h3 class="green" style="margin-top:40px">Newscast Dashboard</h3>
+            <p>This would be the homepage for anything that has to do with newscasts. A tricky element I had to solve for when designing this dashboard was the consideration of both NPR and local Station views. Someone at NPR would see a more "admin" level view with all newscasts published from all local Stations in the NPR Network. Meanwhile, someone at a Station would only see their content and any content that is shared with them. Due to engineering capacity constraints, the differences between the two had to be minimal.</p>
+            <div class="module-blocks">
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/junction/iterationNewscast.png" class="img-full">
+                </div>
+            </div>
+
+            <hr> 
+
+            <h3 class="green">"Above the Fold" Content on Podcast and Newscast Detail Pages</h3>
+            <p>This information is what is mostly used to quickly ascertain the status of the content and where in the processing workflow it went wrong. I designed statuses and progress step bars were used to communicate key details needed for troubleshooting, while including more detailed information in deeper pages.</p>
+
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/junction/atfPodcast.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/junction/atfNewscast.png" class="img">
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/junction/atfCombined.png" class="img-full">
+                </div>
+            </div>
+            
+            <hr>
+
+            <h3 class="green">Pivot to Include "Story Segments" Feature</h3>
+            <p>During the design process and a shift of priority on another team handling the sunset of StationConnect (a legacy local Station-facing tool), we had to pivot to include an additional feature related to story segments (i.e. short headline-like news pieces that are specifically set to be shared across the NPR Network and pulled into the NPR app). Due to our limited runway before launch, we opted to do a nearly 1:1 design of what was previously available into Network Junction. Minor updates included using the designated NPR Network Tool design system and updated language to match newer technology.</p>
+            <div class="module-blocks">
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/junction/storySegments.gif" class="img-full">
+                </div>
+            </div>
+
+            <p>Throughout these iterations, I solicited feedback from my design team, my scrum team (PM, engineers), and our subject matter experts on the NPR editorial team and NPR member partnership team. From these sessions, we decided that we had to cut down on the number of steps for newscast — the backend endpoint needed to return the different statuses in the designs did not exist and lived in another team’s portfolio. As a result, I simplified the designs to something that was in scope for the dev team but still useful to Station staff.</p>
+            
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/junction/dashboardPodcast.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/junction/podcastPage.png" class="img">
+                </div>
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/junction/dashboardNewscast.png" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/junction/newscastPage.png" class="img">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+                        
+    <!-- PROTOTYPE USABILITY TESTING -->
+    <div class="casestudy-research">
+        <div class="content-margin casestudy-section">
+            <div class="section-title highlight-lightgreen">
+                <div class="highlight-darkgreen">
+                    <h2>Prototype Usability Testing</h2>
+                </div>
+            </div>
+                
+            <div class="section-content">
+                <p>While the designs were being created, the scrum team landed on a targeted launch date. With a launch date far enough into the future, I advocated for conducting some quick usability testing with local Station staff in order to test assumptions and hypotheses I made with the designs.</p>
+                    
+                <div class="module-blocks">
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">1. Participates noted how clean, nice, and consistent the tool looked and felt.</h3> 
+                        <p class="spacing">Producers found the process to add sponsorship tags easy and intuitive.</p>
+                        <p class="quote-text">"This makes sense. Add sponsorship markers and then see if they're right."</p>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">2. Management tasks for both podcasts and newscasts matched mental models and were easy to complete.</h3> 
+                        <p class="spacing">Producers tried to click the play button, the break markers in the waveform, and the preview button in the top right.</p>
+                        <p class="quote-text">"The audio form is already loaded, so I assumed that the preview was [as well]."</p>
+                    </div>
+                    <div class="callout" data-aos="fade-right" data-aos-once="true">
+                        <h3 class="green">3. While the NPR:Station collaboration made sense, the Station:Station collaboration/content sharing tasks sometimes tripped people up</h3> 
+                        <p class="spacing">"Publish" means releasing an episode in the world and carries a connotation of finality that is not accurate to when they normally tag for sponsorship in their workflow.</p>
+                        <p class="quote-text">"You can only [publish] once. If you do it wrong, it is a disaster. Publish is high stakes."</p>
+                    </div> 
+                    <div class="callout" data-aos="fade-left" data-aos-once="true">
+                        <h3 class="green">4. NPR-specific technology concepts (e.g. CDS API jargon, Service IDs, backend service statuses) can be a learning curve</h3> 
+                        <p class="spacing">Producers need to be able to QA whether the timecues they put are accurate and do not overlap with episode content.</p>
+                        <p class="quote-text">"Previewing is listening to make sure the audio is smooth and there [are no blips or cuts].</p>
+                    </div>  
+                </div>  
+            </div>
+        </div>
+    </div>
+            
+    <!-- ATM V1 RELEASE -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Final Designs & Release</h2>
+            </div>
+        </div>
+        
+        <div class="section-content">
+            <p>Coming out of usability testing, I worked with our PM and engineering lead to get some final design edits in before the release of Network Junction to the NPR Network. For example:</p>
+            <ul>
+                <li>Added in hover tooltips to explain different modules and the audience-level impact a change in the module would have.</li>
+                <li>Updated every instance of owner organization to use the small blue pill design to reinforce mental models and maintain consistency across the entire platform.</li>
+            </ul>            
+            <div class="module-blocks">
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects//junction/dashboardPodcast.gif" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects//junction/dashboardNewscast.gif" class="img">
+                </div>
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects//junction/podcastPitch.gif" class="img">
+                </div>
+                <div data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/junction/podcastMultipleServices.gif" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- RESULTS & IMPACTS -->
+    <div class="content-casestudy casestudy-section">
+        <div class="section-title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Results & Impact</h2>
+            </div>
+        </div>
+            
+        <div class="section-content">
+            <p>After launch, we nearly immediately saw that Network Junction was a success. We measured this in three ways:</p>
+            <ul>
+                <li>Saw an ~300% increase in Station podcast pitches to the NPR editorial team (more local Station content is reaching more people via NPR’s more national audience)</li>
+                <li>A ~30% decrease in Station submitted support ticket to NPR member partnership team (Stations are able to self-service issues with improved transparency/messaging and UX guardrails)</li>
+                <li>A 200% faster troubleshooting process for submitted support tickets (NPR member partnership team is spending less time digging for information and can resolve issues themselves via Network Junction UI)</li>
+            </ul>
+
+            <p>We also received messages lauding our tool and our efforts in including everyone in the design process. </p>
+            <div class="module-blocks">
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/junction/feedback1.png" class="img-full">
+                </div>
+                <div data-aos="fade-right" data-aos-once="true">
+                    <img src="../images/projects/junction/feedback2.png" class="img">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 30px" data-aos="fade-left" data-aos-once="true">
+                    <img src="../images/projects/junction/feedback3.png" class="img">
+                    <img src="../images/projects/junction/feedback4.png" class="img">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- OTHER WORK -->
+    <div class="content-margin">
+        <div class="title highlight-lightgreen">
+            <div class="highlight-darkgreen">
+                <h2>Check out my other work!</h2>
+            </div>
+        </div>
+        
+        <div class="project-card-row">
+            <a href="panda" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/pandaCover.png" alt="Cover photo for Podcasters NPR Dashboard project">
+                <div class="project-teaser">
+                    <h3>Podcasters NPR Dashboard</h3>
+                    <p>USER RESEARCH & PRODUCT DESIGN</p>
+                    <p>Creating the internal, admin version of NPR's third-party and local station podcast management tool.</p>
+                </div>
+            </a>
+            
+            <a href="cds-discovery" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/cdsDiscoveryCover.png" alt="Cover photo for CDS Discovery project">
+                <div class="project-teaser">
+                    <h3>CDS Discovery</h3>
+                    <p>USER RESEARCH & WORKSHOP FACILITATION</p>
+                    <p>Driving a discovery initiative to define how NPR enables collaborative journalism across NPR and local stations.</p>
+                </div>
+            </a>
+            
+            <a href="concierge" class="casestudy-project-card" target="_blank">
+				    <img class="casestudy-project-card-img" src="../images/projects/conciergeCover.png" alt="Cover photo for Concierge project">
+                <div class="project-teaser">
+                    <h3>Concierge</h3>
+                    <p>PRODUCT DESIGN</p>
+                    <p>Creating the front-end for CDS, NPR's content sharing API to enable collaborative journalism.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+        
+	<!-- SOCIALS FOOTER -->
+    <div class="socials">
+        <!-- Email Me -->
+        <a href="mailto:hhleung@ucsd.edu" target="_blank">
+            <i class="fas fa-envelope fa-lg"></i>
+        </a>        
+        <!-- View photos -->
+        <a href="https://vsco.co/hazelleung/" target="_blank">               
+            <i class="fas fa-camera-retro fa-lg"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>
