@@ -405,7 +405,7 @@ span{
 }
 
 .img-twothirds{
-    max-width: 640px;
+    max-width: 620px;
     height: auto;
     border: 1px solid var(--grey-dark);
 }
@@ -566,6 +566,10 @@ span{
     }
     .module-blocks{
         flex-direction: column;
+    }
+    .img-twothirds{
+        max-width: fit-content;
+        width: 100%;
     }
 }
 
