@@ -74,21 +74,21 @@
                 </div>
             </div>
             
-            <div class="intro-background-img">
+            <div class="intro-row">
                 <img src="../images/projects/panda/panda-screens.png" class="img" data-aos="fade-in" data-aos-once="true"> 
-                <div class="intro-background">
+                <div class="intro-text">
                     <p>THE BACKGROUND</p>
                     <h3>Creating the internal, admin version of NPR's third-party and local station podcast management tool.</h3>
                     <p>When a NPR employee who works with non-NPR podcasts, they want a space where they can both get both the high-level view of the full portfolio and be able to drill down into a specific episode on a show.</p>
                 </div>
             </div>
                 
-            <div class="intro-team-tools">
-                <div class="intro-team">
+            <div class="intro-row">
+                <div class="intro-text">
                     <p>THE TEAM</p>
                     <p>I worked with a scrum team comprised of a product manager, a project manager, software developers, a QA engineer, and an engineering manager.</p>
                 </div>    
-                <div class="intro-tools">
+                <div class="intro-text">
                     <p>THE METHODOLOGY & TOOLS</p>
                     <p>I was the only designer on this project, handling all things from designing/facilitating workshops to wireframing/prototyping in Figma.</p>
                 </div>
@@ -199,7 +199,7 @@
                 </div>
             </div>
             
-            <br>
+            <hr>
             <h3 class="green">Dashboard High-fidelity</h3>
             <div class="module-blocks">
                 <div data-aos="fade-right" data-aos-once="true">
@@ -216,7 +216,7 @@
                 </div>
             </div>
             
-            <br>
+            <hr>
             <h3 class="green">Podcast Page Low-fidelity</h3>
             <div class="module-blocks">
                 <div data-aos="fade-right" data-aos-once="true">
@@ -233,7 +233,7 @@
                 </div>
             </div>
             
-            <br>
+            <hr>
             <h3 class="green">Podcast Page High-fidelity</h3>
             <div class="module-blocks">
                 <div data-aos="fade-right" data-aos-once="true">
@@ -302,18 +302,22 @@
                         <p>One of the most common use cases for internal NPR staff is to ascertain the status of a podcast and to troubleshoot a reported issue. The left-hand status column best supports the experience of quick scanning in one direction.</p>
                         <p>However, we also removed the “add podcast” functionality to cut implementation scope as it required complex organization associations that new back-end services were not built to handle yet. </p>
                     </div>
+                </div>
+
+                <hr>
+                <div class="module-blocks">
+                    <div data-aos="fade-left" data-aos-once="true">
+                        <img src="../images/projects/panda/edgecase-URLuniqueness.png" class="img">
+                    </div>
                     <div class="text">
                         <h3 class="green">Error Handling and Experiences</h3>
                         <p>I also expanded error handling experiences to capture more use cases.</p>
                         <p>For example, RSS feed URLs must be unique and not match any other podcast in the NPR catalogue. The feed ingestion service will validate data entries and the Podcasters NPR Dashboard will display the corresponding error message, if needed.</p>
                         <p>Other use cases included when the URL was not a valid one, did not use https, or when PaNDa runs into difficulties performing an action from a button click.</p>
                     </div>
-                    <div data-aos="fade-left" data-aos-once="true">
-                        <img src="../images/projects/panda/edgecase-URLuniqueness.png" class="img">
-                    </div>
                 </div>
                 
-                <br>
+                <hr>
                 <h3 class="green">Podcast Status Error/Warning Redesign</h3>
                 <p>The podcast page designs had a status bar at the top of the page that showed whether a podcast state was good, warning, error, inactive, or invisible. In this iteration, I removed the status bar because 1) good is the default state, 2) it was redundant to have the state and warning/error bars, and 3) inactive and invisible statues should be more obvious.</p>
                 
@@ -370,10 +374,10 @@
                         <img src="../images/projects/panda/components-podcast.png" class="img">
                         <p class="caption">Components used for individual podcast pages</p>
                     </div>
-                    <div data-aos="fade-in" data-aos-once="true">
-                        <img src="../images/projects/panda/styleguide.png" class="img-full">
-                        <p class="caption-full">General style guide for develeopers to easily reference and get a sense of when styles are utilized.</p>
-                    </div>
+                </div>
+                <div data-aos="fade-in" data-aos-once="true">
+                    <img src="../images/projects/panda/styleguide.png" class="img-full">
+                    <p class="caption-full">General style guide for develeopers to easily reference and get a sense of when styles are utilized.</p>
                 </div>
             </div>
         </div>
@@ -409,7 +413,7 @@
 
     <hr>
     <!-- OTHER WORK -->
-    <div class="content-margin">
+    <div class="main">
         <div class="title highlight-lightgreen">
             <div class="highlight-darkgreen">
                 <h2>Check out my other work!</h2>

@@ -164,7 +164,7 @@ span{
 .socials{
     display: flex;
     flex-direction: row;
-    margin: 5% auto 3% auto;
+    margin: 0 auto;
     justify-content: center;
     gap: 20px;
 }
@@ -173,13 +173,22 @@ span{
     text-decoration: none;
 }
 
-/* INDEX PAGE */
-.content-index{
+.main{
     display: flex;
     flex-direction: column;
-    width: 710px;
-    margin: 75px auto 0 auto;
-    align-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.display{
+    max-width: 710px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+/* INDEX PAGE */
+.greeting{
+    width: 100%;
 }
 
 .greeting h1{
@@ -221,7 +230,7 @@ span{
 .project-card-small{
     display: flex;
     flex-direction: column;
-    max-width: 345px;
+    max-width: 100%;
     align-items: center;
     border: 1px solid #000;
     border-radius: 5px;
@@ -241,23 +250,10 @@ span{
 }
 
 .project-card-img-small{
-    max-width: 344px;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 5px 5px 0px 0px;
-}
-
-@media (max-width: 800px) {
-    .project-card {
-        flex-direction: column;
-    }
-    .project-card-img{
-        max-width:800px;
-        height: auto;
-        display: flex;
-        overflow: hidden;
-        border-radius: 5px 0px 0px 5px;
-    }
 }
 
 .project-teaser{
@@ -271,26 +267,47 @@ span{
 }
 
 /* ABOUT PAGE */
+.display-about{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
 .profile-img{
     display: flex;
-    width: 450px;
+    width: 300px;
     height: auto;
     align-self: flex-start;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .about-me{
     display: flex;
     flex-direction: column;
-    max-width: 480px;
+    width: 100%;
 }
 
 /* CASE STUDY PAGES */
+.intro-row{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.intro-text{
+    width: 100%;
+}
+
 .content-casestudy{
     max-width: 1000px;
     width: 100%;
     margin: 25px auto;
     align-content: center;
+    padding: 0 20px;
 }
 
 .content-margin{
@@ -302,33 +319,12 @@ span{
 .intro{
     display: flex;
     flex-direction: column;
-    margin: 100px auto 50px auto;
+    
 }
 
 .title{
     text-align: center;
     margin-bottom: 45px;
-}
-
-.intro-background-img, .intro-team-tools{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.intro-background, .intro-tools{
-    display: flex;
-    flex-direction: column;
-    max-width: 480px;
-}
-
-.intro-team{
-    max-width: 490px;
-    height: auto;
-    overflow: hidden;
 }
 
 .casestudy-section{
@@ -341,7 +337,7 @@ span{
 .casestudy-research{
     background: var(--grey-light);
     margin-top: 40px;
-    padding-top: 10px;
+    padding: 10px 20px;
 }
 
 .section-title{
@@ -360,7 +356,6 @@ span{
     display: flex;
     flex-direction: row;
     max-width: 1000px;
-    flex-wrap: wrap;
     margin-top: 25px;
     padding-bottom: 25px;
     gap: 20px;
@@ -391,11 +386,15 @@ span{
 }
 
 .img{
-    max-width: 490px;
     width: 100%;
     height: auto;
     overflow: hidden;
     border: 1px solid var(--grey-dark);
+
+}
+
+.half{
+    max-width: 490px;
 }
 
 .img-full{
@@ -425,7 +424,6 @@ span{
 .callout{
     display: flex;
     flex-direction: column;
-    max-width: 490px;
     width: 100%;
     height: auto;
     background-color: var(--white);
@@ -530,37 +528,44 @@ span{
     margin: auto;
 }
 
-/* Responsive Design */
-@media all and (max-width: 400px) {
-    .profile-img{
-        width: 75%;
-        height: auto;
-        margin-right: 30px;
-        margin-bottom: 35px;
-        display: block;
-        overflow: hidden;
+/* Responsiveness */
+@media (max-width: 725px) {
+    .display{
+        max-width: 300px;
+        width: 100%;
     }
-}
-
-@media (max-width: 736px) {
-    .profile-img{
-        width: 75%;
-        height: auto;
-        margin-right: 30px;
-        margin-bottom: 35px;
-        display: block;
-        overflow: hidden;
+    /* Index */
+    .project-card {
+        flex-direction: column;
+        width: 100%;
     }
-}
-
-@media (max-width: 981px){
-    .profile-img{
-        width: 75%;
+    .project-card-img{
+        max-width:800px;
         height: auto;
-        margin-right: 30px;
-        margin-bottom: 35px;
-        display: block;
+        display: flex;
         overflow: hidden;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .project-card-row {
+        flex-direction: column;
+    }
+    /* About */
+    .display-about{
+        flex-direction: column;
+    }
+    .profile-img{
+        width: 100%;
+        margin-top: 0;
+    }
+    /* Case Study */
+    .intro-row{
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .module-blocks{
+        flex-direction: column;
     }
 }
 
