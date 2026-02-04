@@ -164,7 +164,7 @@ span{
 .socials{
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 40px auto;
     justify-content: center;
     gap: 20px;
 }
